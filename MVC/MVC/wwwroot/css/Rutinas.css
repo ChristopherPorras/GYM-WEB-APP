@@ -1,0 +1,106 @@
+﻿/* General body styling */
+body {
+    background-color: #151515;
+    color: white; /* Asegura que el texto sea legible contra el fondo oscuro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #151515; /* Fondo oscuro para todo el contenedor */
+}
+
+/* Input and select elements styling */
+input, select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #252323;
+    color: white;
+    border: 1px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Label styling */
+label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Button styling */
+button {
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: #f36100;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    button.ghost {
+        background-color: transparent;
+        border-color: white;
+    }
+
+/* Title styling */
+h2, h4 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Suggestions list styling */
+#suggestions {
+    background-color: #252323;
+    border: 1px solid #333;
+    color: white;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000; /* Asegura que las sugerencias aparezcan por encima de otros elementos */
+    position: absolute; /* Mantén la lista en su posición */
+    width: 100%; /* Asegura que la lista de sugerencias tenga el mismo ancho que el input */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Añade una sombra para hacerla más visible */
+}
+
+    #suggestions .list-group-item {
+        background-color: #252323;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 10px;
+        border-bottom: 1px solid #444; /* Añade un borde inferior para separar las opciones */
+    }
+
+        #suggestions .list-group-item:last-child {
+            border-bottom: none; /* Elimina el borde del último elemento */
+        }
+
+        #suggestions .list-group-item:hover {
+            background-color: #444; /* Color de fondo más claro en hover */
+            color: #f36100; /* Color de texto en hover */
+            transition: background-color 0.2s ease; /* Transición suave en hover */
+        }
+
+/* Exercise List styling */
+#exerciseList {
+    color: #fff;
+}

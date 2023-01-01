@@ -1,0 +1,223 @@
+﻿/* General body styling */
+body {
+    background-color: #151515;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container styling */
+.container {
+    max-width: 100%;
+    padding: 20px;
+}
+
+/* Breadcrumb section */
+.breadcrumb-section {
+    background-image: url('/img/breadcrumb-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+    .breadcrumb-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+.breadcrumb-text {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+    .breadcrumb-text h2 {
+        color: #f36100;
+        font-size: 40px;
+        margin: 0;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+/* Form styling */
+#form-progreso {
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+    #form-progreso .form-label {
+        color: #f36100;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    #form-progreso .form-control {
+        background-color: #252323;
+        color: white;
+        border: 1px solid #555;
+        border-radius: 5px;
+        padding: 12px;
+        transition: all 0.3s ease;
+        font-size: 1.1rem;
+    }
+
+        #form-progreso .form-control:focus {
+            border-color: #f36100;
+            box-shadow: 0 0 10px rgba(243, 97, 0, 0.7);
+        }
+
+    /* Buttons */
+    #form-progreso .btn {
+        border-radius: 30px;
+        border: 1px solid white;
+        background-color: #f36100;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 12px 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        margin-right: 15px;
+    }
+
+        #form-progreso .btn:hover {
+            background-color: #e25600;
+            transform: translateY(-3px);
+        }
+
+    #form-progreso .btn-danger {
+        background-color: #cf1d1d;
+    }
+
+        #form-progreso .btn-danger:hover {
+            background-color: #b71c1c;
+        }
+
+/* Chart container styling */
+.rect {
+    background-color: #212529;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Highcharts styling */
+.highcharts-figure,
+.highcharts-data-table table {
+    min-width: 310px;
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    background-color: #252323;
+    border-radius: 5px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #f36100;
+    font-weight: bold;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.7em;
+    color: white;
+    background-color: #333;
+    border-top: 2px solid #f36100;
+}
+
+.highcharts-data-table td {
+    padding: 0.7em;
+    color: white;
+    border: 1px solid #444;
+}
+
+.highcharts-data-table tr:nth-child(even) {
+    background-color: #212529;
+}
+
+.highcharts-data-table tr:hover {
+    background-color: #444;
+}
+
+.highcharts-container {
+    background-color: #212529;
+}
+
+.highcharts-title,
+.highcharts-axis-title,
+.highcharts-axis-labels text,
+.highcharts-data-labels text,
+.highcharts-legend-item text,
+.highcharts-tooltip text {
+    fill: white !important;
+}
+
+.highcharts-tooltip {
+    background: rgba(33, 37, 41, 0.9);
+    color: white;
+}
+
+/* Additional styling */
+label {
+    color: #f36100;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+input {
+    background-color: #212529;
+    color: white;
+}
+
+.table-dark {
+    color: white;
+    background-color: #212529;
+}
+
+/* Tooltip styling */
+.highcharts-tooltip {
+    background-color: rgba(243, 97, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
