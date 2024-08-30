@@ -33,7 +33,6 @@
     <None Include="wwwroot\css\flaticon.css" />
     <None Include="wwwroot\css\font-awesome.min.css" />
     <None Include="wwwroot\css\magnific-popup.css" />
-    <None Include="wwwroot\css\owl.carousel.min.css" />
     <None Include="wwwroot\css\slicknav.min.css" />
     <None Include="wwwroot\css\style.css" />
     <None Include="wwwroot\fonts\Flaticon.eot" />
